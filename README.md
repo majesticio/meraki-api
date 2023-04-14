@@ -39,3 +39,8 @@ SAVE_PATH=path/to/folder
 poetry run python save_image.py
 ```
 
+## GIF maker
+> *will take all the saved images and make a GIF!*
+```
+poetry run python gif_maker.py
+```
