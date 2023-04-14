@@ -26,7 +26,7 @@ poetry install
 API_KEY=your_api_key
 NETWORK_ID=your_network_id
 CAMERA_SERIAL=your_camera_serial
-SAVE_PATH=~/path/to/folder
+SAVE_PATH=path/to/folder
 ```
 
 
