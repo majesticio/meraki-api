@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "meraki-python"
+version = "0.1.0"
+description = "fetch images from your camera using meraki api"
+authors = ["Gabriel Fosse <kraken+majesticio@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "meraki_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+httpx = "^0.24.0"
+pillow = "^9.5.0"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

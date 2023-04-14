@@ -1,15 +1,21 @@
+### RUNS CONTINUOUSLY ###
+
 import httpx
 import asyncio
 import os
 import io
 from PIL import Image, UnidentifiedImageError
 from datetime import datetime
+from dotenv import load_dotenv
 
-API_KEY = "144bb12832b630a6a4b5ed431b174c84ed50d197"
-NETWORK_ID = "L_828099381482758539"
-CAMERA_SERIAL = "Q2MV-KCHZ-2DBB"
-SAVE_PATH = "./cam_shot"
-SLEEP_DURATION = 1  ## in minutes
+load_dotenv()
+
+# .env
+API_KEY = os.getenv("API_KEY")
+NETWORK_ID = os.getenv("NETWORK_ID")
+CAMERA_SERIAL = os.getenv("CAMERA_SERIAL")
+SAVE_PATH = os.getenv("SAVE_PATH")
+SLEEP_DURATION = int(os.getenv("SLEEP_DURATION"))  # in minutes
 
 
 async def get_snapshot_url(api_key, network_id, camera_serial, timestamp=None):

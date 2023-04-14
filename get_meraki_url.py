@@ -1,11 +1,13 @@
 import httpx
-import json
+import asyncio
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
-API_KEY = "144bb12832b630a6a4b5ed431b174c84ed50d197"
-NETWORK_ID = "L_828099381482758539"
-CAMERA_SERIAL = "Q2MV-KCHZ-2DBB"
-SAVE_PATH = "./cam_shot"
+API_KEY = os.getenv("API_KEY")
+NETWORK_ID = os.getenv("NETWORK_ID")
+CAMERA_SERIAL = os.getenv("CAMERA_SERIAL")
 
 
 # Retrieve a snapshot URL

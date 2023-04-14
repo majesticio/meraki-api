@@ -1,2 +1,7 @@
 .env
-./cam_shot
+cam_shot
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.env
