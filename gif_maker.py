@@ -13,7 +13,7 @@ output_folder = os.getenv("GIF_PATH")  # The folder for the output GIF
 timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
 
 # Set the output file path with the timestamp
-output_file = os.path.join(output_folder, f"output_{timestamp}.gif")
+output_file = os.path.join(output_folder, f"giffed_on_{timestamp}.gif")
 
 # Make sure the output folder exists
 os.makedirs(output_folder, exist_ok=True)
